@@ -99,9 +99,8 @@
 <script>
 
     let form = document.querySelector("form");
-    let errorMessage = document.getElementById("error-message");
     form.addEventListener("submit", function requiredField (event) {
-
+    let errorMessage = document.getElementById("error-message");
   
         let firstNameVide = document.getElementById("first-name").value.length === 0;
         let lastNameVide = document.getElementById("last-name").value.length === 0;
@@ -139,11 +138,9 @@
             let commentaire = document.getElementById("comment");
             commentList.insertBefore(newDiv1, commentaire);
             
-            errorMessage.style.display = "none";
             
 
         } else {
-        event.preventDefault();
         errorMessage.style.display = "unset";
         } 	      
     }) 
